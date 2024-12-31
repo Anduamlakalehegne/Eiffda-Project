@@ -1,0 +1,91 @@
+.donation-container {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007459;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.toggle-button {
+    background-color: #fff;
+    border: 1px solid #007459;
+    color: #007459;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.toggle-button.active {
+    background-color: #007459;
+    color: #fff;
+}
+
+.amount-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.amount-button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1 0 30%;
+}
+
+.amount-button.selected {
+    border-color: #007459;
+    color: #007459;
+    font-weight: bold;
+}
+
+.custom-amount-input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.next-button {
+    background-color: #007459;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.next-button:hover {
+    background-color: #007459;
+}

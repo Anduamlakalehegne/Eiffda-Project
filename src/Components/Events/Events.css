@@ -1,0 +1,48 @@
+.events {
+    padding: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 5%;
+    justify-content: center;
+  }
+  
+  .event {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+
+  }
+  
+  .event h2 {
+    color: #007459;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  .event p {
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .event p svg {
+    margin-right: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .events {
+        display: grid;
+        grid-template-columns: 90%;
+    }
+
+    .event h2 {
+      color: #007459;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+}
+  

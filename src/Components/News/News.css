@@ -1,0 +1,95 @@
+.news {
+  padding: 50px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.article-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.article-content h4 {
+  font-size: 16px;
+  color: #FF6B0B;
+  margin: 0;
+}
+
+.article-content h3 {
+  font-size: 13px;
+  color: #007459;
+  margin: 0;
+  /* text-align: center; */
+}
+
+.article-content p {
+  font-size: 14px;
+  color: #1a1a1a;
+  text-align: justify;
+  margin: 2px 0px;
+}
+
+.news-article {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.news-article h2 {
+  color: #007459;
+  margin-bottom: 10px;
+}
+
+.news-article p {
+  color: #333;
+  font-size: 16px;
+}
+
+.news-article p svg {
+  margin-right: 5px;
+}
+
+.news-article .read-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007459;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.news-article .read-more:hover {
+  background-color: #005a3c;
+}
+
+.popContainer label {
+  font-size: 18px;
+  display: block;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 10px;
+  color: #005a3c;
+  font-weight: 600;
+}
+
+.popContainer p {
+  font-size: 18px;
+  display: block;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.popup-title {
+  color: #007459;
+  font-size: 21px;
+  text-align: left;
+  font-weight: 700;
+  margin: 0;
+}

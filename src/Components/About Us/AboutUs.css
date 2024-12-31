@@ -1,0 +1,225 @@
+.about-us {
+    padding: 50px;
+    background-color: #f4f7f6;
+}
+
+.about-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.about-us-image {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 30px;
+}
+
+.about-us-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-us-content {
+    flex: 2;
+    min-width: 300px;
+}
+
+.about-us-content h1 {
+    color: #007459;
+    margin-bottom: 20px;
+}
+
+.about-us-content p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.mission-vision-values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mission, .vision, .values {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mission h2, .vision h2, .values h2 {
+    color: #007459;
+    margin-bottom: 15px;
+}
+
+.mission p, .vision p, .values ul {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.values li {
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 50px;
+    color: #007459;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+    padding-top: 20px;
+}
+
+.what-we-do {
+    padding: 50px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 44% 44%;
+    column-gap: 7%;
+    justify-content: center;
+    padding-bottom: 0px;
+}
+
+.what-we-do h2 {
+    color: #007459;
+    margin-bottom: 30px;
+}
+
+.what-we-do-item {
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    transition: .5s;
+}
+
+.what-we-do-item .icon {
+    font-size: 50px;
+    color: #007459;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.what-we-do-item h3 {
+    color: #007459; 
+    margin-bottom: 10px; 
+    font-size: 23px; 
+}
+
+.what-we-do-item p {
+    color: #333; 
+    font-size: 16px; 
+    line-height: 1.6; 
+    padding: 2px; 
+}
+
+.read-more {
+    display: block;  
+    margin: 20px auto 0 auto; 
+    padding: 6px 12px; 
+    background-color: #ff6229; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+    text-align: center; 
+    width: 40%; 
+    cursor: pointer; 
+    font-size: 14px;
+}
+
+.read-more:hover {
+    background-color: #e55220; 
+}
+
+.read-more3 {
+    display: block;  
+    margin: 20px auto 0 auto; 
+    padding: 7px 15px; 
+    background-color: #ff6229; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+    text-align: center; 
+    width: 13%; 
+    cursor: pointer; 
+    font-size: 15px;
+}
+
+.read-more3:hover {
+    background-color: #e55220; 
+}
+
+.read-more3-news {
+    /* display: block;  */
+    margin: 20px auto 0 auto; 
+    padding: 10px 20px; 
+    background-color: #ff6229; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    transition: background-color 0.3s; 
+    text-align: center; 
+    width: 20%; 
+    cursor: pointer; 
+}
+
+.read-more-news:hover {
+    background-color: #e55220; 
+}
+
+.info-content-popup{
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+
+    .read-more3 {
+        width: 37%; 
+        margin-top: 10px;
+    }
+    .what-we-do-item {
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        transition: .5s;
+    }
+    .what-we-do {
+        padding: 25px;
+        grid-template-columns: 100%;
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+
+}
+
+@media (max-width: 608px) {
+
+    .what-we-do h2 {
+        color: #007459;
+        margin-bottom: 30px;
+    } 
+}

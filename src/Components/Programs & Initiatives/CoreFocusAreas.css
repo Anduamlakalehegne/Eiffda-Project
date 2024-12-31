@@ -1,0 +1,55 @@
+.core-focus-areas {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  
+  .focus-area-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .focus-area-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    width: 350px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .focus-area-card:hover {
+    transform: translateY(-5px);
+  }
+
+  
+  .focus-area-card h3 {
+    color: #039472;
+    font-size: 22px;
+  }
+  
+  .focus-area-card p {
+    color: #34495e;
+    font-size: 17px;
+    /* text-align: justify; */
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2em;
+    }
+  
+    .focus-area-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .focus-area-card {
+      width: 90%;
+    }
+  }
+  
