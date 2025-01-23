@@ -282,17 +282,101 @@ const Home = () => {
         fetchNews();
     }, []);
 
+    const getTargetDate = () => {
+        const now = new Date();
+        const currentYear = now.getFullYear();
+        const targetDate = new Date(currentYear, 1, 1); // February 1 of the current year
+
+        // If February 1 has already passed this year, set it for next year
+        if (now > targetDate) {
+            targetDate.setFullYear(currentYear + 1);
+        }
+
+        return targetDate;
+    };
+
+    const targetDate = getTargetDate();
+
+    const calculateTimeLeft = () => {
+        const now = new Date();
+        const difference = targetDate - now;
+
+        if (difference <= 0) {
+            return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+        }
+
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        return { days, hours, minutes, seconds };
+    };
+
+    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setTimeLeft(calculateTimeLeft());
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, []);
+
+    const { days, hours, minutes, seconds } = timeLeft;
+
 
 
     return (
         <div>
             <Header activeLink={"HOME"} />
             <main>
+
+                <div style={{
+                    zIndex: "100",
+                    position: 'absolute',
+                    top: '40%', // Center vertically
+                    left: '50%', // Center horizontally
+                    transform: 'translate(-50%, -50%)', // Adjust for exact center
+                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                    color: 'white',
+                    padding: '10px',
+                    borderRadius: '10px',
+                    width: '80%', // Adjust width as needed
+                    maxWidth: '600px', // Optional: Set a max-width for larger screens
+                }}>
+                    <div className="countdown-container">
+                        <h1 style={{ color: 'white' }} className="countdown-title">Countdown to the Big Event</h1>
+                        <div className="countdown-grid">
+                            <div className="countdown-item">
+                                <span className="countdown-value">{days}</span>
+                                <span className="countdown-label">Days</span>
+                            </div>
+                            <div className="countdown-item">
+                                <span className="countdown-value">{hours}</span>
+                                <span className="countdown-label">Hours</span>
+                            </div>
+                            <div className="countdown-item">
+                                <span className="countdown-value">{minutes}</span>
+                                <span className="countdown-label">Minutes</span>
+                            </div>
+                            <div className="countdown-item">
+                                <span className="countdown-value">{seconds}</span>
+                                <span className="countdown-label">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
                 {loading ? ( // Show loading spinner if loading
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
                         <ReactLoading type="bars" color="#3498db" height={50} width={50} />
                     </div>
                 ) : (
+
+
                     <Swiper
                         onSwiper={setSwiperInstance}
                         style={{ height: '100%', cursor: 'pointer' }}
@@ -309,7 +393,7 @@ const Home = () => {
                         {slider.map((slide, index) => (
                             <SwiperSlide
                                 key={slide.id}
-                                onClick={() => handleSlideClick(index)} 
+                                onClick={() => handleSlideClick(index)}
                             // onMouseEnter={() => swiperInstance.slideTo(index)}  
                             >
                                 <div className="hero" style={{ background: `url(${BASE_URL}${slide.image[0].url}) no-repeat center center/cover` }}>
@@ -371,8 +455,8 @@ const Home = () => {
                                 key={slide.id}
                                 className='sliderImage'
                                 onClick={() => handleSlideClick3(index)}
-                                // onMouseEnter={() => setActiveIndex(index)}
-                                // onMouseLeave={() => setActiveIndex(null)}
+                            // onMouseEnter={() => setActiveIndex(index)}
+                            // onMouseLeave={() => setActiveIndex(null)}
                             >
                                 {slide.image[0]?.url ? (
                                     <img src={`https://backend.eifdda.org${slide.image[0].url}`} alt={`Image ${index + 1}`} />
@@ -519,7 +603,7 @@ const Home = () => {
                 <p style={{ textAlign: 'center', width: '70%', margin: 'auto' }}>
                     Join our mission to create positive change. Your support is vital—here’s how you can help:
                 </p>
-                <div className="what-we-do2"> 
+                <div className="what-we-do2">
                     <div className="what-we-do-item2">
                         <FaHandsHelping className="icon" />
                         <h3>Donations</h3>
