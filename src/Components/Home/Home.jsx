@@ -346,7 +346,7 @@ const Home = () => {
                     maxWidth: '600px', // Optional: Set a max-width for larger screens
                 }}>
                     <div className="countdown-container">
-                        <h1 style={{ color: 'white' }} className="countdown-title">Countdown to the Big Event</h1>
+                        <h1 style={{ color: 'white' }} className="countdown-title">World Interfaith Harmony Week</h1>
                         <div className="countdown-grid">
                             <div className="countdown-item">
                                 <span className="countdown-value">{days}</span>

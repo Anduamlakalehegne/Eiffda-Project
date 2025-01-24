@@ -178,8 +178,8 @@ const Header = ({ activeLink, handleClick }) => {
         <>
             <header className="header2">
                 <ul className="nav-links2">
-                    <li><a href="tel:+251911741562">+251911741562</a></li> 
-                    <li><a href="mailto:eifdda.foryou@gmail.com">eifdda.foryou@gmail.com</a></li>
+                    <li><a href="tel:0940441215">0940441215/0911746712</a></li> 
+                    <li><a href="mailto:info@eifdda.org">info@eifdda.org</a></li>
                 </ul>
                 <nav>
                     <ul className="nav-links3">
