@@ -63,11 +63,11 @@ const ContactUs = () => {
                             </div>
                             <div className="contactInfo-item">
                                 <FaPhoneAlt className="contactInfoicon" />
-                                <p><a href="tel:+251911741562">+251911741562</a></p>
+                                <p><a href="tel:0940441215">0940441215/0911746712</a></p>
                             </div>
                             <div className="contactInfo-item">
                                 <FaEnvelope className="contactInfoicon" />
-                                <p><a href="mailto:eifdda.foryou@gmail.com">eifdda.foryou@gmail.com</a></p>
+                                <p><a href="mailto:info@eifdda.org">info@eifdda.org</a></p>
                             </div>
                         </div>
                         <div className="social-media">

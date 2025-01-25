@@ -994,7 +994,7 @@ body {
 
 .footer {
     background-color: #1a1a1a;
-    color: #848484;
+    color: #dfdfdf;
     padding: 10px 0;
     margin-top: 80px;
 }
@@ -1012,7 +1012,7 @@ body {
     align-items: center;
 }
 .footer-top-item p a{
-    color: #848484;
+    color: #dfdfdf;
     text-decoration: none;
 }
 
@@ -1056,7 +1056,7 @@ body {
 }
 
 .footer-links ul li a {
-    color: #848484;
+    color: #dfdfdf;
     text-decoration: none;
     margin-left: -20px;
     font-size: 15px;
@@ -1073,7 +1073,7 @@ body {
 }
 
 .social-icons a {
-    color: #848484;
+    color: #dfdfdf;
     font-size: 18px;
 }
 
