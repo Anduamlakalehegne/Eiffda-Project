@@ -331,45 +331,6 @@ const Home = () => {
         <div>
             <Header activeLink={"HOME"} />
             <main>
-
-                <div style={{
-                    zIndex: "100",
-                    position: 'absolute',
-                    top: '40%', // Center vertically
-                    left: '50%', // Center horizontally
-                    transform: 'translate(-50%, -50%)', // Adjust for exact center
-                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                    color: 'white',
-                    padding: '10px',
-                    borderRadius: '10px',
-                    width: '80%', // Adjust width as needed
-                    maxWidth: '600px', // Optional: Set a max-width for larger screens
-                }}>
-                    <div className="countdown-container">
-                        <h1 style={{ color: 'white' }} className="countdown-title">World Interfaith Harmony Week</h1>
-                        <div className="countdown-grid">
-                            <div className="countdown-item">
-                                <span className="countdown-value">{days}</span>
-                                <span className="countdown-label">Days</span>
-                            </div>
-                            <div className="countdown-item">
-                                <span className="countdown-value">{hours}</span>
-                                <span className="countdown-label">Hours</span>
-                            </div>
-                            <div className="countdown-item">
-                                <span className="countdown-value">{minutes}</span>
-                                <span className="countdown-label">Minutes</span>
-                            </div>
-                            <div className="countdown-item">
-                                <span className="countdown-value">{seconds}</span>
-                                <span className="countdown-label">Seconds</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
                 {loading ? ( // Show loading spinner if loading
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
                         <ReactLoading type="bars" color="#3498db" height={50} width={50} />
